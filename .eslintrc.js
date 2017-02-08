@@ -3,11 +3,6 @@
 // production rules
 const prod = {
     "no-magic-numbers": ["warn", { "ignore": [0, 1, -1]}],
-    "prefer-arrow-callback": 0,
-    "prefer-template": 0,
-    "no-await-in-loop": 0,
-    "no-return-await": 0,
-    "comma-dangle": ["error", {"arrays": "always-multiline", "objects": "always-multiline", "functions": "never"}],
     "no-console": ["error", {"allow": ["warn", "error"]}],
     "strict": ["error", "function"],
 
@@ -16,6 +11,13 @@ const prod = {
 
     // es6 these are required in airbnb-base, but don't work in IE 11
     "object-shorthand": ["error", "never"],
+    "prefer-rest-params": 0,
+    "prefer-arrow-callback": 0,
+    "prefer-template": 0,
+    "no-await-in-loop": 0,
+    "no-return-await": 0,
+    // trailing comma in functions not supported in ES5
+    "comma-dangle": ["error", {"arrays": "always-multiline", "objects": "always-multiline", "functions": "never"}],
 };
 
 // dev rules extend production rules
