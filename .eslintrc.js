@@ -10,6 +10,7 @@ const prod = {
     'indent': ['error', 4],
 
     // es6 these are required in airbnb-base, but don't work in IE 11
+    'no-var': 0,
     'object-shorthand': ['error', 'never'],
     'prefer-rest-params': 0,
     'prefer-arrow-callback': 0,
